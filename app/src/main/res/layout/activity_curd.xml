@@ -1,0 +1,111 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" android:orientation="vertical" app:layout_constrainedWidth="true" tools:context=".MainActivity" android:gravity="center">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="24dp">
+            <EditText
+                android:id="@+id/update_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="@color/black"
+                android:background="@color/cardview_light_background"
+                android:layout_margin="15sp"
+                android:layout_marginTop="40dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textSize="15sp"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#424242"
+                />
+
+            <EditText
+                android:id="@+id/update_mail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="@color/black"
+                android:background="@color/cardview_light_background"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="8dp" android:layout_margin="15sp"
+                android:hint="E-mail"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#424242"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="15sp"
+                android:layout_height="50dp"
+                android:textColorHint="@color/black"
+                android:textSize="15sp"
+                android:id="@+id/update_password"
+                android:background="@color/cardview_light_background"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:padding="8dp"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHighlight="#424242"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <Button
+                android:id="@+id/Update"
+                android:layout_width="121dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="@color/white"
+
+                android:textSize="18sp"
+                app:cornerRadius="20dp"/>
+
+            <Button
+                android:id="@+id/Remove"
+                android:layout_width="121dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:text="Remove"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"/>
+            <Button
+                android:id="@+id/View"
+                android:layout_width="121dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="View"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
